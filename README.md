@@ -4,7 +4,7 @@
 ###### MATA KULIAH    	: WEBSITE FUNDAMENTAL
 ###### PENGAJAR       	: Muhamad Farihin, ST, 
 ###### NAMA FILE      	: WebFun-Latper7-Bagus_Nugroho
-###### LINK DEMO        : https://brada1604.github.io/2021-LP3I-TASK-WebFun-Latper7-Bagus_Nugroho/index.html
+###### LINK DEMO        : https://brada1604.github.io/2021-LP3I-TASK-WebFun-Latper7-Bagus_Nugroho/
 
 
 ###### REGARDS, BAGUS NUGROHO
