@@ -1,0 +1,773 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>web Fundamental Pertemuan 7</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/mycustom.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-light bg-light navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand mx-2" href="index.html">FurniPedia</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+					<span class="navbar-toggler-icon"></span> <!-- span : masih dalam 1 inline -->
+				</button>
+
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item mx-2"> <!-- mx : m= margin x=ruang kosong kanan kiri -->
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#">Produk</a>
+						</li>
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#">Keranjang</a>
+						</li>
+					</ul>
+
+					<ul class="navbar-nav">
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#"><i class="bi bi-person-plus"></i> Daftar</a>
+						</li>
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#"><i class="bi bi-person"></i> Masuk</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="banner d-flex align-items-center ps-5">
+			<div class="text-block">
+				<hi>Interior &amp; Eksterior</h1>
+				<p>Koleksi terlengkap dengan harga yang kompetitif</p>
+				<a class="btn btn-outline-light" href="#" role="button">Lihat koleksi kami</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="services pt-5 text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mx-auto col-md-6 col-lg-4 my-3"> <!-- my : m=margin y=atas bawah -->
+					<span class="service-icon">
+						<i class="bi bi-minecart-loaded"></i>
+					</span>
+					<h5 class="fw-bold">PENGIRIMAN CEPAT</h5>
+					<p>Kami memberikan jaminan bahwa barang yang anda beli akan datang tepat waktu ke rumah anda.</p>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4 my-3"> <!-- my : m=margin y=atas bawah -->
+					<span class="service-icon">
+						<i class="bi bi-phone-vibrate"></i>
+					</span>
+					<h5 class="fw-bold">CUSTOMER SUPPORT 24&#47;7</h5>
+					<p>Customer care kami memberikan pelayanan 24 jam setia hari, hubungi kami jika anda memerlukannya.</p>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4 my-3"> <!-- my : m=margin y=atas bawah -->
+					<span class="service-icon">
+						<i class="bi bi-wallet2"></i>
+					</span>
+					<h5 class="fw-bold">GARANSI UANG KEMBALI</h5>
+					<p>Jika mendapati barang yang kami jual adalah barang tiruan maka uang anda akan kami kembalikan 100&#37;.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="home-categories pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mx-auto col-md-6 col-lg-3 align-self-center">
+					<h5>Kategori Produk</h5>
+					<p>Dapatkan produk impian anda sekarang juga dengan mencarinya berdasarkan kategori yang telah kami
+						siapkan.</p>
+					<a class="text-weight-bold categories-link" href="#">Lihat semua</a>
+					<div class="categories-underline"></div>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-9 align-self-center">
+					<div class="row">
+						<div class="col-md-6 col-lg-3 my-3">
+							<div class="category-container">
+								<img class="img-fluid category-img" src="assets/img/curology-6CJg-fOTYs4-unsplash.jpg">
+								<a class="category-link" href="#">
+									<h6 class="mb-0">Ruang Tamu</h6>
+									<p class="mb-0">55 produk</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 my-3">
+							<div class="category-container">
+								<img class="img-fluid category-img" src="assets/img/francesca-tosolini-KJFKCed0YKo-unsplash.jpg">
+								<a class="category-link" href="#">
+									<h6 class="mb-0">Kamar</h6>
+									<p class="mb-0">30 produk</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 my-3">
+							<div class="category-container">
+								<img class="img-fluid category-img" src="assets/img/francesca-tosolini-RP29Wz6mIOA-unsplash.jpg">
+								<a class="category-link" href="#">
+									<h6 class="mb-0">Dapur</h6>
+									<p class="mb-0">35 produk</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 my-3">
+							<div class="category-container">
+								<img class="img-fluid category-img" src="assets/img/francesca-tosolini-ykK7DS6vueg-unsplash.jpg">
+								<a class="category-link" href="#">
+									<h6 class="mb-0">Pelataran</h6>
+									<p class="mb-0">20 produk</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="featured py-5">
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-12 mx-auto text-center">
+					<h1>Produk Unggulan Kami</h1>
+					<p class="text-muted">Berikut ini beberapa produk terbaik kami yang siap untuk menghiasi hunian anda.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mx-auto col-md-6 col-lg-4 pb-4">
+					<div class="featured-container p-5">
+						<img src="assets/img/product-1.png" class="img-fluid">
+						<span class="featured-search-icon" data-bs-toggle="modal" data-bs-target="#productmodalone">
+							<i class="bi bi-search"></i>
+						</span>
+						<a class="featured-store-link" href="#"> Tambahkan</a>
+					</div>
+					<h6 class="text-center my-2">Harga Spesial</h6>
+					<h6 class="text-center">
+						<span class="text-muted old-price mx-2">Rp500.000</span>
+						<span class="mx-2">Rp256.000</span>
+					</h6>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4">
+					<div class="featured-container p-5">
+						<img src="assets/img/product-2.png" class="img-fluid">
+						<span class="featured-search-icon" data-bs-toggle="modal" data-bs-target="#productmodaltwo" >
+							<i class="bi bi-search"></i>
+						</span>
+						<a class="featured-store-link" href="#"> Tambahkan</a>
+					</div>
+					<h6 class="text-center my-2">Harga Spesial</h6>
+					<h6 class="text-center">
+						<span class="text-muted old-price mx-2">Rp500.000</span>
+						<span class="mx-2">Rp250.000</span>
+					</h6>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4">
+					<div class="featured-container p-5">
+						<img src="assets/img/product-3.png" class="img-fluid">
+						<span class="featured-search-icon" data-bs-toggle="modal" data-bs-target="#productmodalthree">
+							<i class="bi bi-search"></i>
+						</span>
+						<a class="featured-store-link" href="#"> Tambahkan</a>
+					</div>
+					<h6 class="text-center my-2">Harga Spesial</h6>
+					<h6 class="text-center">
+						<span class="text-muted old-price mx-2">Rp500.000</span>
+						<span class="mx-2">Rp250.000</span>
+					</h6>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4">
+					<div class="featured-container p-5">
+						<img src="assets/img/product-4.png" class="img-fluid">
+						<span class="featured-search-icon" data-bs-toggle="modal" data-bs-target="#productmodalfour">
+							<i class="bi bi-search"></i>
+						</span>
+						<a class="featured-store-link" href="#"> Tambahkan</a>
+					</div>
+					<h6 class="text-center my-2">Harga Spesial</h6>
+					<h6 class="text-center">
+						<span class="text-muted old-price mx-2">Rp500.000</span>
+						<span class="mx-2">Rp250.008</span>
+					</h6>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4">
+					<div class="featured-container p-5">
+						<img src="assets/img/product-5.png" class="img-fluid">
+						<span class="featured-search-icon" data-bs-toggle="modal" data-bs-target="#productmodalfive">
+							<i class="bi bi-search"></i>
+						</span>
+						<a class="featured-store-link" href="#"> Tambahkan</a>
+					</div>
+					<h6 class="text-center my-2">Harga Spesial</h6>
+					<h6 class="text-center">
+						<span class="text-muted old-price mx-2">Rp500.000</span>
+						<span class="mx-2">Rp250.000</span>
+					</h6>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4">
+					<div class="featured-container p-5">
+						<img src="assets/img/product-6.png" class="img-fluid">
+						<span class="featured-search-icon" data-bs-toggle="modal" data-bs-target="#productmodalsix">
+							<i class="bi bi-search"></i>
+						</span>
+						<a class="featured-store-link" href="#"> Tambahkan</a>
+					</div>
+					<h6 class="text-center my-2">Harga Spesial</h6>
+					<h6 class="text-center">
+						<span class="text-muted old-price mx-2">Rp500.000</span>
+						<span class="mx-2">Rp250.000</span>
+					</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-6 col-lg-4 mx-auto">
+					<div id="partnercarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="assets/img/partner-1.png">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-106" src="assets/img/partner-2.png">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/img/partner-3.png">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-106" src="assets/img/partner-4.png">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/img/partner-5.png">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/img/partner-6.png">
+							</div>
+						</div>
+
+						<a class="carousel-control-prev" href="#partnercarousel" role="button" data-slide="prev">
+							<i class="bi bi-arrow-left"></i>
+						</a>
+						<a class="carousel-control-next" href="#partnercarousel" role="button" data-slide="next">
+							<i class="bi bi-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="subscribeform py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-10 mx-auto text-center">
+					<h2>KABAR DARI KAMI</h2>
+					<p>Dapatkan berita terbaru seputar produk-produk unggulan dan promo-promo menarik dari kami.</p>
+					<form>
+						<div class="input-group mt-1 mb-4">
+							<input type="text" class="form-control" placeholder="Masukan alamat e-mail anda">
+							<div class="input-group-text">
+								<i class="bi bi-envelope-fill"></i>
+							</div>
+						</div>
+						<button class="btn btn-secondary" type="submit" >Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="jaminan py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mx-auto col-md-6 col-lg-4 d-flex">
+					<div class="jaminan-icon me-3">
+						<i class="bi bi-truck"></i>
+					</div>
+					<div class="jaminan-text">
+						<h4>GRATIS ONGKIR</h4>
+						<p>Jangan khawatir jika tidak bisa mengunjungi toko, kami memberikan layanan gratis ongkos kirim ke
+						seluruh penjuru Indonesia. </p>
+					</div>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4 d-flex">
+					<div class="jaminan-icon me-3">
+						<i class="bi bi-cash-stack"></i>
+					</div>
+					<div class="jaminan-text">
+						<h4>HARGA KOMPETITIF</h4>
+						<p>Tidak perlu cek toko sebelah, kami juga memberikan garansi harga yang kompetitif dan pasti ramah
+						di dompet.</p>
+					</div>
+				</div>
+
+				<div class="col-12 mx-auto col-md-6 col-lg-4 d-flex">
+					<div class="jaminan-icon me-3">
+						<i class="bi bi-clock-history"></i>
+					</div>
+					<div class="jaminan-text">
+						<h4>GARANSI PANJANG</h4>
+						<p>Setiap barang yang kami jual memiliki garansi 1 tahun + 1 tahun, jadi anda tidak perlu khawatir jika barang rusak.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer pt-5 pb-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mx-auto text-center">
+					<hi class="fw-bold footer-title d-inline-block">FurniPedia</hi>
+
+					<div class="my-2 d-flex justify-content-center">
+						<a class="footer-icon-social mx-2" href="#"><i class="bi bi-facebook"></i></a>
+						<a class="footer-icon-social mx-2" href="#"><i class="bi bi-twitter"></i></a>
+						<a class="footer-icon-social mx-2" href="#"><i class="bi bi-instagram"></i></a>
+						<a class="footer-icon-social mx-2" href="#"><i class="bi bi-youtube"></i></a>
+					</div>
+					<p class="text-muted w-75 mx-auto text-left">
+						FurniPedia merupakan sebuah perusahaan yang bergerak di bidang furniture yang sudah berdiri sejak
+						tahun 1990 dengan toko yang tersebar di banyak kota di Indonesia.
+					</p>
+
+					<div class="footer-contact mt-2 mb-4 px-5 d-flex justify-content-around flex-wrap">
+						<div>
+							<span class="footer-icon mr-2 flex-warp">
+								<i class="bi bi-geo-alt">
+								Jl. Ir. H. Djuanda No. 106 KM2</i>
+							</span>
+						</div>
+
+						<div>
+							<span class="footer-icon mr-2 flex-warp">
+								<i class="bi bi-telephone">
+								Telepon: (0265)123456789</i>
+							</span>
+						</div>
+
+						<div>
+							<span class="footer-icon mr-2">
+								<i class="bi bi-envelope">
+								Email: info@furnipedia.id</i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="productmodalone" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<hS class="modal-title">Informasi Produk</h5>
+						<button type="button" class="close" data-bs-dismiss="modal">
+							<span class="aria-hidden">&times; </span>
+						</button>
+					</div>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col text-center">
+							<img src="assets/img/product-1.png" class="img-fluid">
+								<div class="ratings">
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-half"></i></span>
+								</div>
+
+							<h2 class="text-uppercase my-1">Kursi Kantor Premium</h2>
+							<h3>Rp250.000</h3>
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro.
+							</p>
+
+							<h5>Pilihan warna :
+								<span class="d-inline-block products-color products-color-black mr-2"></span>
+								<span class="d-inline-block products-color products-color-red mr-2"></span>
+								<span class="d-inline-block products-color products-color-blue mr-2"></span>
+								<span class="d-inline-block products-color products-color-green mr-2"></span>
+								<span class="d-inline-block products-color products-color-yellow mr-2"></span>
+							</hS>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-12 mx-auto text-center">
+										<div class="d-flex flex-wrap">
+											<div class="d-flex my-2">
+												<span class="btn btn-outline-dark mx-1">-</span>
+												<span class="btn btn-outline-dark mx-1">4</span>
+												<span class="btn btn-outline-dark mx-1">+</span>
+											</div>
+											<button class="btn btn-outline-dark my-1 mx-3">Wishlist</button>
+											<button class="btn btn-success my-1 ml-4">Masukan keranjang</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="productmodaltwo" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<hS class="modal-title">Informasi Produk</h5>
+						<button type="button" class="close" data-bs-dismiss="modal">
+							<span class="aria-hidden">&times; </span>
+						</button>
+					</div>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col text-center">
+							<img src="assets/img/product-2.png" class="img-fluid">
+								<div class="ratings">
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-half"></i></span>
+								</div>
+
+							<h2 class="text-uppercase my-1">Kursi Sofa Bulu</h2>
+							<h3>Rp250.000</h3>
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro.
+							</p>
+
+							<h5>Pilihan warna :
+								<span class="d-inline-block products-color products-color-black mr-2"></span>
+								<span class="d-inline-block products-color products-color-red mr-2"></span>
+								<span class="d-inline-block products-color products-color-blue mr-2"></span>
+								<span class="d-inline-block products-color products-color-green mr-2"></span>
+								<span class="d-inline-block products-color products-color-yellow mr-2"></span>
+							</hS>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-12 mx-auto text-center">
+										<div class="d-flex flex-wrap">
+											<div class="d-flex my-2">
+												<span class="btn btn-outline-dark mx-1">-</span>
+												<span class="btn btn-outline-dark mx-1">4</span>
+												<span class="btn btn-outline-dark mx-1">+</span>
+											</div>
+											<button class="btn btn-outline-dark my-1 mx-3">Wishlist</button>
+											<button class="btn btn-success my-1 ml-4">Masukan keranjang</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="productmodalthree" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<hS class="modal-title">Informasi Produk</h5>
+						<button type="button" class="close" data-bs-dismiss="modal">
+							<span class="aria-hidden">&times; </span>
+						</button>
+					</div>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col text-center">
+							<img src="assets/img/product-3.png" class="img-fluid">
+								<div class="ratings">
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-half"></i></span>
+								</div>
+
+							<h2 class="text-uppercase my-1">Kursi Kantor Premium</h2>
+							<h3>Rp250.000</h3>
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro.
+							</p>
+
+							<h5>Pilihan warna :
+								<span class="d-inline-block products-color products-color-black mr-2"></span>
+								<span class="d-inline-block products-color products-color-red mr-2"></span>
+								<span class="d-inline-block products-color products-color-blue mr-2"></span>
+								<span class="d-inline-block products-color products-color-green mr-2"></span>
+								<span class="d-inline-block products-color products-color-yellow mr-2"></span>
+							</hS>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-12 mx-auto text-center">
+										<div class="d-flex flex-wrap">
+											<div class="d-flex my-2">
+												<span class="btn btn-outline-dark mx-1">-</span>
+												<span class="btn btn-outline-dark mx-1">4</span>
+												<span class="btn btn-outline-dark mx-1">+</span>
+											</div>
+											<button class="btn btn-outline-dark my-1 mx-3">Wishlist</button>
+											<button class="btn btn-success my-1 ml-4">Masukan keranjang</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="modal fade" id="productmodalfour" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<hS class="modal-title">Informasi Produk</h5>
+						<button type="button" class="close" data-bs-dismiss="modal">
+							<span class="aria-hidden">&times; </span>
+						</button>
+					</div>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col text-center">
+							<img src="assets/img/product-4.png" class="img-fluid">
+								<div class="ratings">
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-half"></i></span>
+								</div>
+
+							<h2 class="text-uppercase my-1">Kursi Kantor Premium</h2>
+							<h3>Rp250.000</h3>
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro.
+							</p>
+
+							<h5>Pilihan warna :
+								<span class="d-inline-block products-color products-color-black mr-2"></span>
+								<span class="d-inline-block products-color products-color-red mr-2"></span>
+								<span class="d-inline-block products-color products-color-blue mr-2"></span>
+								<span class="d-inline-block products-color products-color-green mr-2"></span>
+								<span class="d-inline-block products-color products-color-yellow mr-2"></span>
+							</hS>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-12 mx-auto text-center">
+										<div class="d-flex flex-wrap">
+											<div class="d-flex my-2">
+												<span class="btn btn-outline-dark mx-1">-</span>
+												<span class="btn btn-outline-dark mx-1">4</span>
+												<span class="btn btn-outline-dark mx-1">+</span>
+											</div>
+											<button class="btn btn-outline-dark my-1 mx-3">Wishlist</button>
+											<button class="btn btn-success my-1 ml-4">Masukan keranjang</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="productmodalfive" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<hS class="modal-title">Informasi Produk</h5>
+						<button type="button" class="close" data-bs-dismiss="modal">
+							<span class="aria-hidden">&times; </span>
+						</button>
+					</div>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col text-center">
+							<img src="assets/img/product-5.png" class="img-fluid">
+								<div class="ratings">
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-half"></i></span>
+								</div>
+
+							<h2 class="text-uppercase my-1">Kursi Kantor Premium</h2>
+							<h3>Rp250.000</h3>
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro.
+							</p>
+
+							<h5>Pilihan warna :
+								<span class="d-inline-block products-color products-color-black mr-2"></span>
+								<span class="d-inline-block products-color products-color-red mr-2"></span>
+								<span class="d-inline-block products-color products-color-blue mr-2"></span>
+								<span class="d-inline-block products-color products-color-green mr-2"></span>
+								<span class="d-inline-block products-color products-color-yellow mr-2"></span>
+							</hS>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-12 mx-auto text-center">
+										<div class="d-flex flex-wrap">
+											<div class="d-flex my-2">
+												<span class="btn btn-outline-dark mx-1">-</span>
+												<span class="btn btn-outline-dark mx-1">4</span>
+												<span class="btn btn-outline-dark mx-1">+</span>
+											</div>
+											<button class="btn btn-outline-dark my-1 mx-3">Wishlist</button>
+											<button class="btn btn-success my-1 ml-4">Masukan keranjang</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="productmodalsix" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<hS class="modal-title">Informasi Produk</h5>
+						<button type="button" class="close" data-bs-dismiss="modal">
+							<span class="aria-hidden">&times; </span>
+						</button>
+					</div>
+
+				<div class="modal-body">
+					<div class="row">
+						<div class="col text-center">
+							<img src="assets/img/product-6.png" class="img-fluid">
+								<div class="ratings">
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-fill"></i></span>
+									<span class="rating-icon"><i class="bi bi-star-half"></i></span>
+								</div>
+
+							<h2 class="text-uppercase my-1">Kursi Kantor Premium</h2>
+							<h3>Rp250.000</h3>
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, porro.
+							</p>
+
+							<h5>Pilihan warna :
+								<span class="d-inline-block products-color products-color-black mr-2"></span>
+								<span class="d-inline-block products-color products-color-red mr-2"></span>
+								<span class="d-inline-block products-color products-color-blue mr-2"></span>
+								<span class="d-inline-block products-color products-color-green mr-2"></span>
+								<span class="d-inline-block products-color products-color-yellow mr-2"></span>
+							</hS>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-12 mx-auto text-center">
+										<div class="d-flex flex-wrap">
+											<div class="d-flex my-2">
+												<span class="btn btn-outline-dark mx-1">-</span>
+												<span class="btn btn-outline-dark mx-1">4</span>
+												<span class="btn btn-outline-dark mx-1">+</span>
+											</div>
+											<button class="btn btn-outline-dark my-1 mx-3">Wishlist</button>
+											<button class="btn btn-success my-1 ml-4">Masukan keranjang</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>

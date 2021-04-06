@@ -1,0 +1,203 @@
+body {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.banner {
+	background: url(../img/toa-heftiba-FV3GConVSss-unsplash.jpg) ;
+	min-height: calc(100vh - 56px); /* 100% view high dikurangi 56 pixel tinggi header*/
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.text-block {
+	position: absolute;
+	/* bottom: 200px;*/
+	/* right: 65%;*/
+	background:rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	color: white;
+}
+
+.service-icon {
+	display: inline-block;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	color: white;
+	background: gray;
+	padding: 0.5rem 1.5rem;
+	border-radius: 50%
+}
+
+.categories-link {
+	color: gray;
+	text-decoration: none;
+}
+
+.categories-link:hover {
+	color: black;
+}
+
+.categories-underline {
+	height: 0.1rem;
+	width: 5rem;
+	background: gray;
+}
+
+.category-container {
+	position: relative;
+}
+
+.category-img {
+	transition: all 0.5s linear;
+}
+
+.category-container:hover .category-img {
+	opacity: 0.5;
+}
+
+.category-link {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.2rem 3rem 0.2rem 0.2rem;
+	background: white;
+	color: gray;
+	text-decoration: none;
+	clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%); /*Mirip seperti mapping searah jarum jam dari kiri atas*/	
+	opacity: 0;
+	transition: all 0.5s linear;
+}
+
+.category-container:hover .category-link {
+	opacity: 1;
+}
+
+.category-link:hover {
+	color: black;	
+}
+
+.featured-container {
+	background: rgba(0,0,0,0.1);
+	position: relative;
+	overflow: hidden;
+}
+
+.featured-search-icon {
+	background: white;
+	display: inline-block;
+	padding: 0.2rem 0.4rem;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	font-size: 1.2rem;
+	transform: translatex(112%) ;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.featured-container:hover .featured-search-icon {
+	transform: translatex(0%);
+}
+
+.featured-store-link {
+	background: white;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.2rem 0.4rem;
+	position: absolute;
+	right: 9;
+	top: 60%;
+	font-size: 1.2rem;
+	transform: translatex(110%);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.featured-container:hover .featured-store-link {
+	transform: translatex(0%);
+}
+
+.featured-store-link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.old-price {
+	text-decoration: line-through;
+}
+
+.partners {
+	background: rgba(0,0,0,0.1);
+}
+
+.carousel-control-prev {
+	font-size: 2.5rem;
+	color: black;
+	transform: translateX(-200%) ;
+}
+
+.carousel-control-next {
+	font-size: 2.5rem;
+	color: black;
+	transform: translateX(200%);
+}
+
+.jaminan {
+	background: gray;
+	color: white;
+}
+
+.jaminan-icon {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.footer {
+	background: rgba(0,0,0,0.1);
+}
+
+.footer-title {
+	border: 0.5rem solid gray;
+	padding: 0.4rem;
+	color: gray;
+}
+
+.footer-icon-social {
+	color: gray;
+}
+
+.footer-icon-social:hover {
+	color: white;
+}
+
+.footer-icon {
+	color: gray;
+}
+
+.products-color {
+	width: 1rem;
+	height: 1rem;
+}
+
+.products-color-black {
+	background: black;
+}
+
+.products-color-red {
+	background: red;
+}
+
+.products-color-blue {
+	background: blue;
+}
+
+.products-color-green {
+	background: green;
+}
+
+.products-color-yellow {
+	background: yellow;
+}
